@@ -20,8 +20,6 @@ const alienRouter = require('./router/demo');
 app.use('/aliens',alienRouter);
 
 
-
-app.listen(4000,function(){
-    console.log('Listen on 4000');
-});
-
+// start the server listening for requests
+app.listen(process.env.PORT || 3000, 
+	() => console.log("Server is running..."));
