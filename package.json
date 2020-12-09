@@ -1,19 +1,19 @@
 {
-  "name": "crud",
+  "name": "Node_Heroku",
   "version": "1.0.0",
-  "description": "",
+  "description": "node app ",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
-  },
-  "author": "rohantumma",
+  "start": "node app.js"
+},
+  "repository": {
+  "type": "git",
+  "url": ""
+},
+  "author": "",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1",
-    "mongodb": "^3.6.3",
-    "mongoose": "^5.11.5"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.6"
-  }
+  "bugs": {
+  "url": ""
+},
+  "homepage": ""
 }
