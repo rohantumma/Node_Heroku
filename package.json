@@ -1,19 +1,19 @@
 {
   "name": "Node_Heroku",
   "version": "1.0.0",
-  "description": "node app ",
+  "description": "",
   "main": "app.js",
   "scripts": {
-  "start": "node app.js"
-},
-  "repository": {
-  "type": "git",
-  "url": ""
-},
-  "author": "",
+    "start": "nodemon app.js"
+  },
+  "author": "rohantumma",
   "license": "ISC",
-  "bugs": {
-  "url": ""
-},
-  "homepage": ""
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.11.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
 }
