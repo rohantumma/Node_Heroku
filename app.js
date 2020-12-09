@@ -1,26 +1,12 @@
-const express = require('express');
-const mongoose = require('mongoose');
+const http = require('http');
+const port = process.env.PORT || 3000
 
-// import router
-
-//start exp app
-const app = express();
-
-mongoose.connect("mongodb+srv://max:max@cluster0.uokio.mongodb.net/kjk?retryWrites=true&w=majority")
-        .then(()=>{
-          console.log("CONNECTED TO DB..");
-        })
-        .catch(()=>{ console.log("CONNECTION ERROR...")
-        });
-
-app.use(express.json());
-
-const alienRouter = require('./router/demo');
-
-app.use('/aliens',alienRouter);
-
-
-app.listen(4000, function(){
-    console.log('Listen on 4000');
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/html');
+  res.end('<h1>Hello World</h1>');
 });
 
+server.listen(port,() => {
+  console.log(`Server running at port `+port);
+});
